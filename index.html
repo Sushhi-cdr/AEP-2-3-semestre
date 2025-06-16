@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edifício Sustentável Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edifício Sustentável Inteligente</h1>
+        <button id="toggleDayNight" class="control-button">Alternar Ciclo Dia/Noite</button>
+
+        <div class="building">
+            <div class="roof">
+                <div class="solar-panel" id="solarPanel"></div>
+                <div class="skylight" id="skylight"></div>
+            </div>
+            <div class="walls">
+                <div class="window left" id="windowLeft"></div>
+                <div class="window right" id="windowRight"></div>
+                <div class="main-body"></div> <!-- Corpo principal do prédio -->
+            </div>
+            <div class="base"></div>
+        </div>
+        <div class="info-panel">
+            <p>Hora simulada: <span id="currentTime"></span></p>
+            <p>Estado do edifício: <span id="buildingState"></span></p>
+            <p>Nível de energia solar: <span id="energyLevel">0%</span></p>
+        </div>
+        <p class="disclaimer">Esta é uma simulação visual e conceitual com tempo acelerado.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
